@@ -61,6 +61,11 @@
     align-items: center;
 }
 
+
+    .menu-icon{
+        display: none;
+    }
+
 .logo{
     max-height: 62px;
     max-width: 62px;
@@ -325,7 +330,7 @@ footer{
     padding: 110px 0;
 }
 
-footer .container{
+footer.container{
     /* display: grid;
     justify-content: center;
     grid-template-rows: repeat(1, 1fr); */
@@ -369,31 +374,82 @@ footer .left .logo-name{
     gap: 50px;
 }
 
-.mid, .right{
-    /* border: 2px solid tomato; */
-}
+
 
 
 
 /* Styles for small Devices */
-@media screen and (max-width: 576px) {
-     .body{
+
+@media screen and (max-width:576px) {
+        
+    body.quicksand-normal{
         margin: 0px;
-        width: 100vw;
+        width: 576px;
         /* padding: 1rem; */
     } 
     
-    .nav{
+    nav{
+        width: 556px;
+        padding: 0;
+        border: 1px solid orange;
+        padding: 10px;
+    }
+    
+    .menu-icon > i{
+        /* display: block; */
+        height: 20px;
+        width: 20px;
+    }
+
+    .banner{
+        /* width: 100%; */
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner-head{
+        margin: 0;
+        text-align: center;
+        padding: 0 40px;
+    }
+
+    .banner-p{
+        margin: 0;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .banner-content{
+        width: 576px;
+        margin: 0;
+    }
+
+    .hero{
+        width: 516px;
+        margin: 20px 40px;
+    }
+
+    .hero img{
         width: 100%;
     }
     
+    .banner-btn{
+        margin-left: 200px;
+    }
+
     .site-name, .links, .contact{
         display: none;
     }
     
-    .banner{
-        display: flex;
-        flex-direction: column;
+    
+
+
+    .standard-curr{
+        padding: 0px 30px 30px;
+        margin: 50px 0px 0px;
+
     }
 
     .std-cards{
@@ -405,18 +461,30 @@ footer .left .logo-name{
 
 
     footer{
-        background-color: #01ACFD;
-        height: 100%;
-        padding: 84px 18px;
+        /* background-color: #01ACFD; */
+        height: 700px;
+        padding: 30px;
     }
 
-    footer .container{
-        flex-direction:column ;
-    }
-
-    .container{
+    footer.container{
+        
+        
         margin: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
     }
+
+    .left, .mid-right{
+        padding: 0px;
+    }
+    
+    .mid-right{
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+
 
 
 
